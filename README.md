@@ -1,41 +1,48 @@
 # CSV-Data-Analyzer-Visualization-Tool
-Features
-CSV File Loading: Easily browse and import local CSV files.
+🚀 Key Features
+📂 Instant CSV Loading: High-speed parsing of local datasets using a native file explorer.
 
-Data Preview: View your dataset in an interactive QTableWidget.
+🧩 Interactive Data Preview: Real-time rendering of datasets in a structured QTableWidget.
 
-Statistical Summary: Automatically calculates total rows, columns, missing values, and descriptive statistics (mean, std, min, max, etc.).
+📈 Automated Statistical Summary: Instant calculation of row/column counts, null value detection, and descriptive statistics (Mean, SD, Min, Max).
 
-Mean Data Visualization: Generates a dynamic bar chart representing the mean values of all numeric columns using QtChart.
+📊 Dynamic Visualization: A dedicated visualization engine that generates QtChart bar graphs for numeric column means.
 
-Responsive Interface: Clean layout with error handling for non-numeric data.
+🛡️ Robust Error Handling: Built-in validation to handle non-numeric data and empty files without crashing.
 
-🛠️ Built With
-Python 3.x
+🛠️ Technical Stack
+This project is built using a modern Python-centric architecture:
 
-PyQt5: For the graphical user interface.
+Language: Python 3.x
 
-Pandas: For high-performance data manipulation and analysis.
+GUI Framework: PyQt5 (Professional-grade desktop components)
 
-QtChart: For rendering high-quality statistical graphs.
+Data Engine: Pandas (Industry-standard data manipulation)
+
+Charting: QtChart (Hardware-accelerated graphics)
 
 📋 Prerequisites
-Ensure you have the following Python libraries installed:
+Before running the tool, ensure your environment has the following Core Dependencies:
 
 Bash
+# Install the required framework and libraries
 pip install pandas PyQt5 PyQtChart
-💻 How to Run
-Clone this repository or download the source code.
+💻 Installation & Execution
+Clone the repository to your local machine.
 
-Navigate to the project directory.
+Navigate into the project folder.
 
-Run the application using:
+Launch the application using the command below:
 
 Bash
 python your_filename.py
-📖 Usage
-Load Data: Click the "Load CSV File" button and select a .csv file from your computer.
+📖 How It Works
+Step 1: Data Ingestion
+Click Load CSV File. The application uses Pandas to read the file and automatically detects data types.
 
-Analyze: The application will display a summary of the data (missing values, numeric columns) and populate the table.
+Step 2: Analysis
+The interface updates to show a comprehensive summary of your data quality (missing values) and a statistical breakdown of your numeric variables.
 
-Visualize: Click "Show Mean Chart" to open a new window displaying a bar series of the average values for your numeric data.
+Step 3: Visualization
+Click Show Mean Chart. A new window appears with a high-definition bar chart, providing an immediate visual comparison of your data's averages.
+
